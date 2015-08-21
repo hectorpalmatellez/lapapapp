@@ -1,0 +1,21 @@
+{
+  "name": "la-papapp",
+  "app_id": "",
+  "documentRoot": "app",
+  "gulpStartupTasks": [
+    "env",
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "app/**/*",
+    "!app/scss/**/*",
+    "!app/lib/**/*"
+  ],
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "http://myapp.pow/api"
+    }
+  ]
+}
