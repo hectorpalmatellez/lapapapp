@@ -1,7 +1,7 @@
-Platanus Ionic App
+LaPapApp Ionic App
 =====================
 
-This app was created with the Platanus Ionic Generator! Below you will find instructions on how to develop with our guidelines.
+Official happy-project-product, started with the Platanus Ionic Generator.
 
 ## Getting started
 
@@ -12,8 +12,6 @@ If you cloned this app, as opposed to generating it, you need to:
 - Run ```cordova prepare``` in order to add the platforms and plugins defined in the app's config.xml, as per Cordova 5.0.
 
 ## Common tasks
-
-The Platanus Ionic workflow tries to adhere as much as possible to the Cordova & Ionic way of doing things, so to do common tasks such as to serve, emulate or build your app, or adding platforms and plugins, use the Ionic and Cordova CLI commands you would regularly use. Some tasks are:
 
 - ```ionic serve``` to serve the app to your browser
 - ```ionic emulate ios``` to launch your app in the iOS emulator
