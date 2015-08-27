@@ -1,11 +1,11 @@
-angular.module('app', 
+angular.module('app',
   [
     'app.env',
-    'ionic', 
+    'ionic',
     'restmod',
-    'PlAuth', 
+    'PlAuth',
     'LocalStorageModule',
-    'app.controllers', 
+    'app.controllers',
     'app.directives',
     'app.models',
     'app.services'
@@ -13,7 +13,7 @@ angular.module('app',
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
-    console.log('Platanus');
+    console.log('LaPapApp ready');
 
     if (window.cordova && window.cordova.plugins.Keyboard) {
       cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
