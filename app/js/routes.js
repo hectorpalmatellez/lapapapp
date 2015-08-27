@@ -5,9 +5,9 @@ angular.module('app')
   $stateProvider
 
   .state('app', {
-    url: "/app",
+    url: '/app',
     abstract: true,
-    templateUrl: "templates/menu.html"
+    templateUrl: 'templates/menu.html'
   })
     .state('app.feed', {
       url: '/feed',
@@ -49,4 +49,4 @@ angular.module('app')
     });
 
   $urlRouterProvider.otherwise('/app/feed');
-})
+});
