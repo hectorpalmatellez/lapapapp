@@ -5,12 +5,14 @@ angular.module('app.services')
     getPosts: function(){
       // On a real-world app, with Restmod connected to a server, you should do:
       // return Post.$collection().$fetch();
+
+      // retrieve from API
       return [
-        { id: 1, author: 'José', message: 'Lorem ipsum dolor sit amet.' },
-        { id: 2, author: 'Rick', message: 'Lorem ipsum dolor sit amet.' },
-        { id: 3, author: 'Thomas', message: 'Lorem ipsum dolor sit amet.' },
-        { id: 4, author: 'Louise', message: 'Lorem ipsum dolor sit amet.' },
-        { id: 5, author: 'Sebastian', message: 'Lorem ipsum dolor sit amet.' }
+        { id: 1, author: 'Choon', message: 'hola' },
+        { id: 2, author: 'Choon', message: 'Lorem ipsum dolor sit amet.' },
+        { id: 3, author: 'Choon', message: 'Lorem ipsum dolor sit amet.' },
+        { id: 4, author: 'Choon', message: 'Lorem ipsum dolor sit amet.' },
+        { id: 5, author: 'Choon', message: 'Lorem ipsum dolor sit amet.' }
       ];
     }
   };
