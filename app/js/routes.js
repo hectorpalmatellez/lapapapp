@@ -16,12 +16,12 @@ angular.module('app')
         templateUrl: 'templates/app/feed.html'
       }}
     })
-    .state('app.turnBlue', {
-      url: '/turn-blue',
-      views: { menuContent: {
-        templateUrl: 'templates/app/turn-blue.html'
-      }}
-    })
+    // .state('app.turnBlue', {
+    //   url: '/turn-blue',
+    //   views: { menuContent: {
+    //     templateUrl: 'templates/app/turn-blue.html'
+    //   }}
+    // })
     .state('app.auth', {
       url: '/auth',
       views: { menuContent: {
