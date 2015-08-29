@@ -22,15 +22,6 @@ angular.module('app',
       StatusBar.styleDefault();
     }
   });
-})
-
-.config(function(restmodProvider, AuthConfigProvider) {
-  AuthConfigProvider.setUidHeaderName('X-MobileUser-Email');
-  AuthConfigProvider.setTokenHeaderName('X-MobileUser-Token');
-
-  restmodProvider.rebase('RootlessAMSApi', function() {
-    this.setUrlPrefix('/api'); // Should be defined in environment file
-  });
 });
 
 angular.module('app.controllers', []);

@@ -1,8 +1,10 @@
 angular.module('app.controllers')
 
-.controller('FeedCtrl', function($scope, PostsSrv, UsersSrv){
+.controller('FeedCtrl', function($scope, $http){
+  'use strict';
 
-  $scope.loggedIn = UsersSrv.isLogged;
-  $scope.posts = PostsSrv.getPosts();
-
+  $http.get('https://lapapappi.herokuapp.com/api/spots.json').
+    success(function(data) {
+      $scope.spots = data;
+    });
 });
