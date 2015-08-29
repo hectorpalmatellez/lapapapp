@@ -6,9 +6,11 @@
       <span ng-if="!loggedIn()">:(</span>
     </div> -->
     <div class="padding">
-      <div class="post" ng-repeat="post in posts">
-        <p>{{ post.message }}</p>
-        <h4>By {{ post.author }}</h4>
+      <div class="a-spot" ng-repeat="spot in spots" data-id="{{ spot.id }}">
+        <h2 class="spot-nickname">{{ spot.nickname }}</h2>
+        <h6 class="spot-name"><em>{{ spot.name }}</em></h6>
+        <p class="spot-description">{{ spot.description }}</p>
+        <address>{{ spot.address.street }} {{ spot.address.number }}</address>
       </div>
     </div>
   </ion-content>
