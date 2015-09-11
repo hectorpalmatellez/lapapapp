@@ -10,7 +10,7 @@ angular.module('app')
     templateUrl: 'templates/menu.html'
   })
     .state('app.feed', {
-      url: '/feed',
+      url: '/home',
       views: { menuContent: {
         controller: 'FeedCtrl',
         templateUrl: 'templates/app/feed.html'
