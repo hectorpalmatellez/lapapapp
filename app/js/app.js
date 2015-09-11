@@ -2,6 +2,7 @@ angular.module('app',
   [
     'app.env',
     'ionic',
+    'ionic-material',
     'LocalStorageModule',
     'app.controllers',
     'app.directives',
