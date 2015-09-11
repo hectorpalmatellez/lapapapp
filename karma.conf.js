@@ -19,7 +19,6 @@ module.exports = function(config) {
       './www/lib/angular-ui-router/release/angular-ui-router.js',
       './www/lib/ionic/js/ionic.js',
       './www/lib/ionic/js/ionic-angular.js',
-      './www/lib/angular-restmod/dist/angular-restmod-bundle.js',
       './www/lib/ngCordova/dist/ng-cordova.js',
       './www/js/**/*.js',
       './www/test/helpers/*.js',

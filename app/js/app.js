@@ -2,8 +2,6 @@ angular.module('app',
   [
     'app.env',
     'ionic',
-    'restmod',
-    'PlAuth',
     'LocalStorageModule',
     'app.controllers',
     'app.directives',

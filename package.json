@@ -2,7 +2,7 @@
   "name": "la-papapp",
   "version": "0.0.1",
   "description": "",
-  "author": "",
+  "author": "Héctor Palma Téllez",
   "license": "ISC",
   "dependencies": {
     "bower": "^1.4.1",
