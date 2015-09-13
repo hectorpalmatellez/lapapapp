@@ -9,7 +9,7 @@ angular.module('app')
     abstract: true,
     templateUrl: 'templates/menu.html'
   })
-    .state('app.feed', {
+    .state('app.home', {
       url: '/home',
       views: { menuContent: {
         controller: 'FeedCtrl',
@@ -41,5 +41,5 @@ angular.module('app')
       }}
     });
 
-  $urlRouterProvider.otherwise('/app/feed');
+  $urlRouterProvider.otherwise('/app/home');
 });
