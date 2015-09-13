@@ -7,9 +7,9 @@ angular.module('app.controllers')
     success(function(data) {
       $scope.spots = data;
 
-      $timeout(function () {
-        ionicMaterialMotion.fadeSlideInRight();
-      }, 1000);
+      // $timeout(function () {
+      //   ionicMaterialMotion.fadeSlideInRight();
+      // }, 1000);
       // FIXME: animation not working
     });
 
