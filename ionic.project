@@ -1,6 +1,6 @@
 {
   "name": "la-papapp",
-  "app_id": "",
+  "app_id": "8b753a9f",
   "documentRoot": "app",
   "gulpStartupTasks": [
     "env",
