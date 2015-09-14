@@ -5,13 +5,13 @@
       <span ng-if="loggedIn()">:)</span>
       <span ng-if="!loggedIn()">:(</span>
     </div>
-    <div class="">
-      <div class="a-spot card item" ng-repeat="spot in spots" data-id="{{ spot.id }}">
+    <ion-list>
+      <ion-item class="a-spot card item" ng-repeat="spot in spots" data-id="{{ spot.id }}">
         <h2 class="spot-nickname">{{ spot.nickname }}</h2>
         <h6 class="spot-name"><em>{{ spot.name }}</em></h6>
         <p class="spot-description">{{ spot.description }}</p>
         <address>{{ spot.address.street }} {{ spot.address.number }}</address>
-      </div>
-    </div>
+      </ion-item>
+    </ion-list>
   </ion-content>
 </ion-view>
