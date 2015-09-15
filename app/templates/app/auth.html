@@ -1,13 +1,12 @@
 <ion-view title="Auth" id="feed-view">
-  <ion-nav-title>Auth</ion-nav-title>
+  <ion-nav-title>Login</ion-nav-title>
   <ion-content class="padding">
-    <div ng-if="loggedIn()">
-      <h2>You are {{ currentUser().email }}</h2>
-      <button ng-click="logout()" class="button">Log out</button>
-    </div>
-    <div ng-if="!loggedIn()">
-      <button ng-click="signupExample()" class="button button-block button-calm">Sign up as example@domain.com</button>
-      <button ng-click="loginExample()" class="button button-block">Login as example@domain.com</button>
-    </div>
+    <oauth
+      site="http://lapapappi.herokuapp.com/"
+      client-id="e68876f92d97b1ab19597397984ec973e64d43b5758c0dbbf2cc78d198870338"
+      redirect-uri="http://lapapappi.herokuapp.com/oauth/authorize"
+      profile-uri="http://lapapappi.herokuapp.com/api/users/"
+      scope="public">
+    </oauth>
   </ion-content>
 </ion-view>

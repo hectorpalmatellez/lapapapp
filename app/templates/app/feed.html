@@ -1,17 +1,13 @@
 <ion-view title="Feed" id="feed-view">
   <ion-nav-title>lapappap</ion-nav-title>
   <ion-content>
-    <div class="padding login-status">
-      <span ng-if="loggedIn()">:)</span>
-      <span ng-if="!loggedIn()">:(</span>
-    </div>
     <ion-list>
-      <ion-item class="a-spot card item" ng-repeat="spot in spots" data-id="{{ spot.id }}">
-        <h2 class="spot-nickname">{{ spot.nickname }}</h2>
-        <h6 class="spot-name"><em>{{ spot.name }}</em></h6>
-        <p class="spot-description">{{ spot.description }}</p>
-        <address>{{ spot.address.street }} {{ spot.address.number }}</address>
-      </ion-item>
+    <ion-item class="a-spot card" ng-repeat="spot in spots" data-id="{{ spot.id }}">
+      <h2 class="spot-nickname">{{ spot.nickname }}</h2>
+      <h6 class="spot-name"><em>{{ spot.name }}</em></h6>
+      <p class="spot-description">{{ spot.description }}</p>
+      <address>{{ spot.address.street }} {{ spot.address.number }}</address>
+    </ion-item>
     </ion-list>
   </ion-content>
 </ion-view>

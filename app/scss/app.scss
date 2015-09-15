@@ -23,3 +23,9 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 @import "app/menu";
 @import "app/feed";
+
+.card {
+  max-width: 97%;
+  margin: 20px 6px;
+  padding: 12px 10px;
+}

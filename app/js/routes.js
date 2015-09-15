@@ -1,6 +1,7 @@
 angular.module('app')
 
-.config(function($stateProvider, $urlRouterProvider){
+.config(function($stateProvider, $urlRouterProvider) {
+  'use strict';
 
   $stateProvider
 
@@ -9,37 +10,23 @@ angular.module('app')
     abstract: true,
     templateUrl: 'templates/menu.html'
   })
-    .state('app.home', {
-      url: '/home',
-      views: { menuContent: {
+  .state('app.home', {
+    url: '/home',
+    views: {
+      menuContent: {
         controller: 'FeedCtrl',
         templateUrl: 'templates/app/feed.html'
-      }}
-    })
-    .state('app.auth', {
-      url: '/auth',
-      views: { menuContent: {
+      }
+    }
+  })
+  .state('app.auth', {
+    url: '/auth',
+    views: {
+      menuContent: {
         templateUrl: 'templates/app/auth.html'
-      }}
-    })
-    .state('app.protected', {
-      url: '/protected',
-      resolve: {
-        currentUser: function($ionicPopup, UsersSrv) {
-          var promise = UsersSrv.loggedPromise();
-          promise.then(null, function(){
-            $ionicPopup.alert({
-              title: 'Ups!',
-              template: 'No estás autenticado, no puedes acceder a esta página.'
-            });
-          });
-          return promise;
-        }
-      },
-      views: { menuContent: {
-        templateUrl: 'templates/app/protected.html'
-      }}
-    });
+      }
+    }
+  });
 
-  $urlRouterProvider.otherwise('/app/home');
+  $urlRouterProvider.otherwise('/app/feed');
 });
